@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(45deg,papayawhip 50%, pink 50%);
+    background-repeat: no-repeat;
+}
+.inici{
+    width: 100%;
+    height: 589px;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+h1{
+    padding-top: 2rem;
+    font-family: Helvetica;
+}
+span{
+    color: grey;
+}
+.cos{
+    width: 960px;
+    height: 780px;
+    margin: auto;
+    
+
+}
+.cotxes{
+    background: white;
+    width: 290px;
+    height: 240px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.cotxes img{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 50%;
+}
+.peu{
+
+    text-align: center;
+}
+p{
+    font-family: helvetica;
+    color: gray;
+    position: relative;
+    left: 10px;
+
+}
+iframe{
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    border: none;
+    top: 50px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0;
+    left: 2px;
+}
+.cotxes img:hover{
+    opacity: 100%;
+    filter: hue-rotate(180deg);
+}
+.cotxes:hover{
+    animation: 1s rotacio linear;
+}
+@keyframes rotacio{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media (max-width:940px) {
+    .cos{
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 20px; 
+    height: 1500px;
+
+    }
+   
+}
